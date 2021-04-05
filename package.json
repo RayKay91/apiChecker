@@ -1,0 +1,15 @@
+{
+  "name": "api-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "apiChecker.js",
+  "scripts": {
+    "start": "node apiChecker.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
