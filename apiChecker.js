@@ -13,7 +13,8 @@ async function apiChecker( apiUrl ) {
 
   date = `2021-04-0${ date }`;
 
-  if ( hours != 23 || hours <= 1 ) return
+  if ( hours < 23 || hours > 1 ) return
+
   if ( mins > 20 && mins < 50 ) return
 
   let resp = await axios.get( apiUrl );
