@@ -25,7 +25,7 @@ async function apiChecker( apiUrl ) {
     try {
       await fs.writeFile( './times.txt', `new times fetched -> ${ d.toUTCString() }`, { flag: 'a' } )
 
-    } catch {
+    } catch ( error ) {
       await fs.writeFile( 'times.txt', 'error ' + error, { flag: 'a' } )
     }
     clearInterval( x );
